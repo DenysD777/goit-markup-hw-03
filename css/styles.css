@@ -1,0 +1,342 @@
+/* Основний колір тексту #212121; */
+/* Втроринний колір тексту #757575; */
+/* Третій колір тексту #FFFFFF; */
+/* Четвертий колір тексту rgba(255, 255, 255, 0.6); */
+/* Акцент #2196F3; */
+/* Основний колір фону #F5F5F5; */
+/* Вторинний колір фону #2F303A; */
+/* Третій колір фону  #FFFFFF; */
+/* Задання перемінних */
+:root {
+  --first-color-text: #212121;
+  --second-color-text: #757575;
+  --third-color-text: #ffffff;
+  --fourth-color-text: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --first-bg-color: #ffffff;
+  --second-bg-color: #2f303a;
+  --third-bg-color: #f5f5f5;
+  --fourth-bg-color: #f5f4fa;
+}
+/* Body */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--first-color-text);
+  background-color: var(--first-bg-color);
+}
+.list {
+  list-style-type: none;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--first-bg-color);
+}
+.logo {
+  color: var(--first-color-text);
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  
+
+  letter-spacing: 0.03em;
+}
+.logo .web {
+  color: var(--accent-color);
+}
+.list li {
+  display: inline-block;
+}
+.studio {
+  color: var(--first-color-text);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.studio.current {
+  color: var(--accent-color);
+}
+.studio:hover,
+.studio:focus {
+  color: var(--accent-color);
+}
+.portfolio {
+  color: var(--first-color-text);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15px;
+  letter-spacing: 0.02em;
+}
+.portfolio.active {
+  color: var(--accent-color);
+}
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--accent-color);
+}
+.call {
+  color: var(--first-color-text);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.call:hover,
+.call:focus {
+  color: var(--accent-color);
+}
+.mail {
+  color: var(--second-color-text);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.tel {
+  color: var(--second-color-text);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
+/* Hero */
+.hero {
+  background-color: var(--second-bg-color);
+}
+.title {
+  color: var(--third-bg-color);
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-hero {
+  color: var(--third-color-text);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  align-items: center;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Main */
+.main {
+  background-color: var(--third-bg-color);
+}
+/* Ефективні рішення */
+.solution {
+  background-color: var(--first-bg-color);
+}
+.details {
+}
+.punctuality {
+}
+.planning {
+}
+.modern {
+}
+.text {
+  color: var(--first-color-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.text-item {
+  color: var(--second-color-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.invisible-text {
+  opacity: 0;
+}
+/* Що ми робимо */
+.services {
+  background-color: var(--first-bg-color);
+}
+
+/* Наша команда */
+.people {
+  background-color: var(--fourth-bg-color);
+}
+.people .list {
+}
+.main-text {
+  color: var(--first-color-text);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.16;
+  font-size: 36px;
+  text-align: center;
+  align-items: center;
+}
+.name {
+  color: var(--first-color-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.speciality {
+  color: var(--second-color-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+/* Footer */
+.footer {
+  background-color: var(--second-bg-color);
+}
+.list-footer {
+  list-style-type: none;
+}
+.address {
+  color: var(--third-color-text);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.logo-footer {
+  color: var(--third-color-text);
+  font-family: "Raleway", sans-serif;
+
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-footer .web {
+  color: var(--accent-color);
+}
+.mail-footer {
+  color: var(--fourth-color-text);
+
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.tel-footer {
+  color: var(--fourth-color-text);
+
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.mail-footer:hover,
+.mail-footer:focus {
+  color: var(--accent-color);
+}
+.tel-footer:hover,
+.tel-footer:focus {
+  color: var(--accent-color);
+}
+/* Portfolio Main */
+.main {
+  background-color: var(--first-bg-color);
+}
+/* Фільтр робіт */
+.work-button {
+  color: var(--first-color-text);
+  background-color: var(--fourth-bg-color);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border: 0;
+
+  border-radius: 4px;
+}
+.work-button:hover,
+.work-button:focus {
+  color: var(--third-color-text);
+  background-color: var(--accent-color);
+}
+.list.filter {
+}
+.list.examples {
+}
+.work-text {
+  color: var(--first-color-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.work-project {
+  color: var(--second-color-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+.work-photo {
+  text-decoration: none;
+}
+.footer.second {
+}
