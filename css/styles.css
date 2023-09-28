@@ -36,17 +36,15 @@ body {
 
 .header {
   background-color: var(--first-bg-color);
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid var(--border-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
-  }
+  border-bottom: 1px solid var(--border-color);
+ }
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container.item{
@@ -62,25 +60,18 @@ body {
 
   .container-nav .list{
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
   margin: 0;
   padding: 0;
-  width: 280px;
   margin-left: 93px;
-}
-
-.container-contact{
-  width: 300px;
-  padding: 0;
-  margin: 0;
 }
 
 .list-contact{
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  gap:50px
 }
 
 .logo {
@@ -99,14 +90,16 @@ body {
 }
 
 .studio {
+  display:inline-block;
   color: var(--first-color-text);
   text-decoration: none;
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .studio.current {
@@ -119,13 +112,16 @@ body {
 }
 
 .portfolio {
+  display : inline-block;
   color: var(--first-color-text);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.15px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .portfolio.active {
@@ -142,14 +138,16 @@ body {
 }
 
 .call {
+  display:inline-block;
   color: var(--first-color-text);
   text-decoration: none;
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .call:hover,
@@ -191,23 +189,26 @@ body {
 
 /* Hero */
 
-.hero {
+.section.hero {
   background-color: var(--second-bg-color);
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
 }
 
 .title {
   color: var(--third-bg-color);
   margin: 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 44px;
+font-style: normal;
+font-weight: 900;
+line-height: 60px;
+letter-spacing: 2.64px;
+text-transform: uppercase;
+width: 696px;
+margin-left: auto;
+margin-right: auto;
   }
  
 .button-hero {
@@ -239,21 +240,23 @@ body {
 }
 
 /* Ефективні рішення */
-
+.section.solution{
+  padding-bottom: 0;
+}
 .solution{
   background-color: var(--first-bg-color);
 }
 
 .solution .list {
 display: flex;
-justify-content: space-between;
-width: 1200px;
 margin: 0;
 padding: 0;
+gap:30px;
 } 
 
-.solution li{
+.solution-link{
   width: 270px;
+  
 }
 
 .text {
@@ -275,6 +278,7 @@ padding: 0;
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin: 0;
+  margin-top: 10px;
 }
 
 /* Що ми робимо */
@@ -288,10 +292,12 @@ padding: 0;
 .container.decision .list{
   padding: 0;
 }
-
+.list-img{
+  display: block;
+} 
 .services .list{
   display: flex;
-  justify-content: space-between;
+  gap:30px;
  margin: 0;
  margin-top: 50px;
 }
@@ -321,12 +327,14 @@ padding: 0;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
   padding: 0;
+  gap:30px;
   }
 
 .list .link{
   text-align: center;
+  padding: 0;
+  align-items: center;
 }
 
 .name {
@@ -470,29 +478,26 @@ height: 38px;
 
 .list.filter {
   display: flex;
-  justify-content: space-between;
-  width: 530px;
+  width: 575px;
   margin: 0;
   padding: 0;
-  margin-left: auto;
- margin-right: auto;
+   margin-left: auto; 
+ margin-right: auto; 
+ gap:8px;
 }
 
 .list.examples {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 54px;
-  
+  gap:30px;
 }
 
-.list.examples:not(:nth-child(2n+3)){
-  margin-right: 30px;
-}
+
 
 .list.examples :nth-child(n + 4){
   margin-top: 30px;
