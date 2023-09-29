@@ -345,7 +345,7 @@ gap:30px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-top: 30px;
+
 }
 
 .speciality {
@@ -358,13 +358,14 @@ gap:30px;
   margin: 0;
   margin-top: 10px;
 }
-
+.info{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Footer */
 
 .footer {
   background-color: var(--second-bg-color);
-  display: flex;
-  flex-direction:column;
   padding-top: 50px;
   padding-bottom: 60px;
 
@@ -375,12 +376,12 @@ gap:30px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 9px;
 }
 
 .address {
   color: var(--third-color-text);
   margin-top: 20px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -414,7 +415,9 @@ gap:30px;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
-
+.footer-link.tel{
+  margin-top: 9px;
+}
 .tel-footer {
   color: var(--fourth-color-text);
   
@@ -436,9 +439,9 @@ gap:30px;
   color: var(--accent-color);
 }
 
-.footer-link{
+/* .footer-link{
  margin-top: 10px;
-}
+} */
 
 /* Portfolio Main */
 
@@ -478,11 +481,10 @@ height: 38px;
 
 .list.filter {
   display: flex;
-  width: 575px;
+  justify-content: center;
   margin: 0;
   padding: 0;
-   margin-left: auto; 
- margin-right: auto; 
+   
  gap:8px;
 }
 
@@ -493,24 +495,16 @@ height: 38px;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 54px;
+  margin-top: 50px;
   gap:30px;
 }
-
-
-
-.list.examples :nth-child(n + 4){
-  margin-top: 30px;
-}
-
-.examples-link{
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 20px;
-}
-
 .examples-conteiner{
-  margin-left: 20px;
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: 0;
 }
+
+
 
 .work-text {
   color: var(--first-color-text);
@@ -520,7 +514,7 @@ height: 38px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin: 0;
-  margin-top: 20px;
+  
 }
 
 .work-project {
